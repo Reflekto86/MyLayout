@@ -33,7 +33,6 @@
     font-weight: normal;
 }
 
-
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url('fonts/BebasNeueRegular/bebas_neue_regular-webfont.eot');
@@ -65,8 +64,9 @@ body {
 /*HEADER*/
 
 header {
-    height: 60px;
-    padding: 6px; 
+    height: 48px;
+    padding: 6px 9px;
+    background-color: yellow; 
 }
 
 .logo {
@@ -86,7 +86,7 @@ header {
 }
 
 .questions::first-line {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 /*INFOGRAPHIC*/
@@ -110,7 +110,7 @@ header {
 }
 
 .threeCircles {
-    display: flex;
+    display: flexbox;
     margin-left: 120px;
     margin-right: 120px;
 }
