@@ -3,10 +3,34 @@
 Съешь меня.
 
 13 июля:
-1. Почему-то не подключился шрифт Exo2Light
-2. Откуда взялся отступ снизу в whyThreeCircles (и после circle)? И сам блок circle съехал вниз...
+1. Почему-то не подключился шрифт Exo2Light +
+2. Откуда взялся отступ снизу в whyThreeCircles (и после circle)?
+- Поставь классу circle font-size: 0 и line-height: 0
+И сам блок circle съехал вниз...
 
 3. Можно ли прямо указывать высоту блока? Например, 
 .buy {
     height: 638px;
+}
+
+Так желать не стоит. делай так:
+
+<div class="wrapper">
+    <div class="container"></div>
+</div>
+<div class="wrapper">
+    <div class="container"></div>
+</div>
+<div class="wrapper prices">
+    <div class="container"></div>
+</div>
+<div class="wrapper">
+    <div class="container"></div>
+</div>
+
+.wrapper {width: 100%;}
+
+.container {
+    width: 1000px;
+    margin: 0 uto;
 }
