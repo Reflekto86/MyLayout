@@ -136,6 +136,45 @@ header {
     height: 638px;
 }
 
+.recommend {
+    display: table;
+}
+
+.recommend ul {
+    display: table-row;
+}
+
+.recommend li {
+    display: table-cell;
+}
+
+.recommend h1 {
+    display: table-caption;
+    caption-side: top;
+    font-family: "Exo2";
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+}
+
+.recommend .content {
+    display: table-row-group;
+}
+
+.column {
+    display: table-column;
+}
+
+
+
+/*.recommendText {
+    font-family: "Exo2";
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding-top: 35px;
+}*/
+
+
 /*BOTTOM*/
 
 /*TODO увеличить градиент и переместить его центр*/
