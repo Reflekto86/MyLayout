@@ -69,10 +69,13 @@ body {
     margin: 0 auto;
 }
 
+.clear {
+    clear: both;
+}
+
 /*HEADER*/
 
 header {
-    height: 48px;
     padding: 6px 5px;
 }
 
@@ -199,9 +202,8 @@ header {
 
 /*BOTTOM*/
 
-/*TODO увеличить градиент и переместить его центр*/
 .wrapper.bottomBg {
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgb(70,73,78) 0%, rgb(32,33,35) 100%);
+    background-image: radial-gradient(circle closest-side at 50% 50%, rgb(70,73,78) 0%, rgb(32,33,35) 654%);
     background-repeat: no-repeat;
 }
 
@@ -251,6 +253,7 @@ footer {
     background-repeat: no-repeat;
     background-position: left;
     padding-left: 140px;
+    width: 70%;
 }
 
 .footerText a {
@@ -263,6 +266,7 @@ footer {
     line-height: 1.7;
     text-align: right;
     color: rgb(255, 255, 255);
+    width: 30%;
 }
 
 .phone span {
