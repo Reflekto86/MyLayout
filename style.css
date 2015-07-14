@@ -228,3 +228,39 @@ header {
 
 /*FOOTER*/
 
+.wrapper.footerBg {
+    background-color: rgb(70, 73, 78);
+}
+
+footer {
+    display: inline-flex;
+    padding: 30px 20px 80px 22px;    
+}
+
+.footerText {
+    font-family: "Exo2";
+    font-size: 12px;
+    line-height: 2;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-image: url("images/stf_big.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 140px;
+}
+
+.footerText a {
+    color: rgb(84, 172, 210);
+}
+
+.phone {
+    font-family: "Exo2";
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.phone span {
+    font-size: 20px;
+}
