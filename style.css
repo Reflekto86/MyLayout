@@ -44,7 +44,7 @@
     font-style: normal;
 }
 
-body {
+/*body {
     background-image: radial-gradient(circle closest-side at 50% 50%, rgb(255,255,255) 0%, rgb(191,192,193) 100%), 
         url("images/bg_why.png"),
         radial-gradient(circle closest-side at 50% 50%, rgb(70,73,78) 0%, rgb(32,33,35) 100%);    
@@ -54,9 +54,22 @@ body {
         100% 200px;
     background-repeat: no-repeat;
     background-position-y: 60px, 692px, 1720px, 1921px;
+}*/
+
+body {
+
 }
 
+/*.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}*/
+
 .wrapper {
+    width: 100%;
+}
+
+.container {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -65,16 +78,20 @@ body {
 
 header {
     height: 48px;
-    padding: 6px 9px;
+    padding: 6px 5px;
 }
 
 .logo {
-    float: left;
+    float: left;    
+}
+
+.text {
     font-family: 'BebasNeueRegular';
     font-size: 10px;
     letter-spacing: 2px;
-    color: rgb(130, 130, 130);    
-}
+    line-height: 1.2;
+    color: rgb(130, 130, 130);  
+} 
 
 .questions {
     float: right;
