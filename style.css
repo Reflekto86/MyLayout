@@ -76,7 +76,7 @@ body {
 /*HEADER*/
 
 header {
-    padding: 6px 5px;
+    padding: 6px 5px; /* поправить отступы height: 60px */
 }
 
 .logo {
@@ -114,7 +114,6 @@ header {
 .wrapper.whyBg {
     background-image: url("images/bg_why.png");
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .why {
@@ -185,19 +184,44 @@ header {
     display: table-row-group;
 }
 
-.column {
-    display: table-column;
+.recommend .content li {
+    border-bottom: 1px solid rgb(225, 225, 225);
+    padding: 10px 10px;
+    line-height: 60px;
 }
 
+.column {
+    display: table-column;
+    background-color: red;
+}
 
+.column-group {
+    display: table-column-group;
+}
 
-/*.recommendText {
-    font-family: "Exo2";
-    font-size: 50px;
-    color: rgb(54, 54, 54);
-    text-align: center;
-    padding-top: 35px;
-}*/
+.column-group .column {
+    background-color: red;
+}
+
+.column-group .column.corp {
+    background-color: orange;
+}
+
+.column-group .column.usd {
+    background-color: yellow;
+}
+
+.column-group .column.one {
+    background-color: green;
+}
+
+.column-group .column.btn {
+    background-color: blue;
+}
+
+.column-group .column.perc {
+    background-color: purple;
+}
 
 
 /*BOTTOM*/
