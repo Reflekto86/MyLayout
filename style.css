@@ -76,7 +76,7 @@ body {
 /*HEADER*/
 
 header {
-    padding: 6px 5px; /* поправить отступы height: 60px */
+    padding: 7px 5px;
 }
 
 .logo {
@@ -114,6 +114,7 @@ header {
 .wrapper.whyBg {
     background-image: url("images/bg_why.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .why {
@@ -157,11 +158,13 @@ header {
 }
 
 .buy {
-    /*height: 638px;*/
+    padding-top: 40px;
+    padding-bottom: 65px;
 }
 
 .recommend {
     display: table;
+    margin: auto;
 }
 
 .recommend ul {
@@ -170,14 +173,59 @@ header {
 
 .recommend li {
     display: table-cell;
+    vertical-align: middle;
+    font-family: "Exo2";
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+}
+
+.recommend li:nth-child(1) {
+    text-align: right;
+    /*
+    background-image: url("images/apple.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */   
+}
+
+.recommend li:nth-child(2) {
+    
+}
+
+.recommend li:nth-child(3) {
+    font-family: "Exo2Bold";
+    text-align: right;
+}
+
+.recommend li:nth-child(4) {
+    text-align: left;
+}
+
+.recommend button {
+    width: 129px;
+    height: 38px;
+    background-color: rgb(255, 198, 0);
+    border: none;
+    font-family: "Exo2";
+    font-size: 16px;
+}
+
+.recommend li:nth-child(6) {
+    font-family: "Exo2Bold";
+    font-size: 30px;
+    text-align: right;
+    color: rgb(94, 139, 29)
 }
 
 .recommend h1 {
     display: table-caption;
     caption-side: top;
-    font-family: "Exo2";
+    font-family: "Exo2Light";
     font-size: 50px;
     color: rgb(54, 54, 54);
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .recommend .content {
@@ -187,9 +235,13 @@ header {
 .recommend .content li {
     border-bottom: 1px solid rgb(225, 225, 225);
     padding: 10px 10px;
-    line-height: 60px;
 }
 
+.recommend .content img {
+    
+}
+
+/*
 .column {
     display: table-column;
     background-color: red;
@@ -197,10 +249,13 @@ header {
 
 .column-group {
     display: table-column-group;
-}
+}    
+*/
 
+
+/*
 .column-group .column {
-    background-color: red;
+   
 }
 
 .column-group .column.corp {
@@ -222,6 +277,9 @@ header {
 .column-group .column.perc {
     background-color: purple;
 }
+*/
+
+
 
 
 /*BOTTOM*/
