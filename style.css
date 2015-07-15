@@ -162,6 +162,23 @@ header {
     padding-bottom: 65px;
 }
 
+.buyNow {
+    font-family: "Exo2Light";
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.profitDate {
+    float: right;
+    font-family: "Exo2";
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+    text-align: left;
+    padding-right: 90px;
+}
+
 .recommend {
     display: table;
     margin: auto;
@@ -181,12 +198,10 @@ header {
 
 .recommend li:nth-child(1) {
     text-align: right;
-    /*
-    background-image: url("images/apple.svg");
+    /*background-image: url("images/apple.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    */   
+    background-size: cover;*/
 }
 
 .recommend li:nth-child(2) {
@@ -218,16 +233,6 @@ header {
     color: rgb(94, 139, 29)
 }
 
-.recommend h1 {
-    display: table-caption;
-    caption-side: top;
-    font-family: "Exo2Light";
-    font-size: 50px;
-    color: rgb(54, 54, 54);
-    text-align: center;
-    padding-bottom: 15px;
-}
-
 .recommend .content {
     display: table-row-group;
 }
@@ -240,47 +245,6 @@ header {
 .recommend .content img {
     
 }
-
-/*
-.column {
-    display: table-column;
-    background-color: red;
-}
-
-.column-group {
-    display: table-column-group;
-}    
-*/
-
-
-/*
-.column-group .column {
-   
-}
-
-.column-group .column.corp {
-    background-color: orange;
-}
-
-.column-group .column.usd {
-    background-color: yellow;
-}
-
-.column-group .column.one {
-    background-color: green;
-}
-
-.column-group .column.btn {
-    background-color: blue;
-}
-
-.column-group .column.perc {
-    background-color: purple;
-}
-*/
-
-
-
 
 /*BOTTOM*/
 
