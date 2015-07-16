@@ -226,6 +226,24 @@ header {
     font-size: 16px;
 }
 
+.recommend button span.buyStock {
+    display: none;
+}
+
+.recommend button:hover {
+    width: 183px;
+    background-color: rgb(255, 228, 0);
+}
+
+.recommend button:hover span.buyBtn {
+    display: none;
+}
+
+.recommend button:active {
+    width: 183px;
+    background-color: rgb(201, 156, 0);
+}
+
 .recommend li:nth-child(6) {
     font-family: "Exo2Bold";
     font-size: 30px;
