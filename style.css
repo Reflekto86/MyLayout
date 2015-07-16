@@ -105,6 +105,11 @@ header {
 
 /*INFOGRAPHIC*/
 
+.wrapper.info {
+    background-image: radial-gradient(circle closest-side at 50% 50%, rgb(255,255,255) 0%, rgb(191,192,193) 397%);
+    background-repeat: no-repeat;
+}
+
 .infographic {
     
 }
@@ -262,6 +267,31 @@ header {
 
 .recommend .content img {
     
+}
+
+.total {
+    font-family: "Exo2";
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.total span {
+    font-family: "Exo2Bold";
+    font-size: 30px;
+    color: rgb(232, 68, 34);
+}
+
+.field {
+    font-family: "Exo2";
+    font-size: 19px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 3px;
+    padding: 16px; 
 }
 
 /*BOTTOM*/
