@@ -44,18 +44,6 @@
     font-style: normal;
 }
 
-/*body {
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgb(255,255,255) 0%, rgb(191,192,193) 100%), 
-        url("images/bg_why.png"),
-        radial-gradient(circle closest-side at 50% 50%, rgb(70,73,78) 0%, rgb(32,33,35) 100%);    
-    background-size: 100% 632px,
-        100% 391px,
-        100% 200px, 
-        100% 200px;
-    background-repeat: no-repeat;
-    background-position-y: 60px, 692px, 1720px, 1921px;
-}*/
-
 body {
 
 }
@@ -158,13 +146,31 @@ header {
 
 /*BUY*/
 
-.wrapper.buyBg {
-
+.buy {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 65px;
 }
 
-.buy {
-    padding-top: 40px;
-    padding-bottom: 65px;
+.buy::before {
+    content: url("images/arrow.svg");
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: 17%;
+    bottom: 80px;
+    left: 40px;
+}
+
+.buy::after {
+    content: url("images/arrow.svg");
+    transform: rotateY(180deg);
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: 17%;
+    bottom: 80px;
+    right: 40px;
 }
 
 .buyNow {
@@ -199,18 +205,13 @@ header {
     font-family: "Exo2";
     font-size: 18px;
     color: rgb(37, 37, 37);
+    border-bottom: 1px solid rgb(225, 225, 225);
+    padding: 10px 10px;
 }
 
 .recommend li:nth-child(1) {
     text-align: right;
-    /*background-image: url("images/apple.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
-
-.recommend li:nth-child(2) {
-    
+    padding-left: 16px;
 }
 
 .recommend li:nth-child(3) {
@@ -220,6 +221,14 @@ header {
 
 .recommend li:nth-child(4) {
     text-align: left;
+}
+
+.recommend li:nth-child(6) {
+    font-family: "Exo2Bold";
+    font-size: 30px;
+    text-align: right;
+    color: rgb(94, 139, 29);
+    padding-right: 38px;
 }
 
 .recommend button {
@@ -249,24 +258,8 @@ header {
     background-color: rgb(201, 156, 0);
 }
 
-.recommend li:nth-child(6) {
-    font-family: "Exo2Bold";
-    font-size: 30px;
-    text-align: right;
-    color: rgb(94, 139, 29)
-}
-
 .recommend .content {
-    display: table-row-group;
-}
-
-.recommend .content li {
-    border-bottom: 1px solid rgb(225, 225, 225);
-    padding: 10px 10px;
-}
-
-.recommend .content img {
-    
+    display: table-row-group;   
 }
 
 .total {
@@ -275,13 +268,18 @@ header {
     color: rgb(37, 37, 37);
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .total span {
     font-family: "Exo2Bold";
     font-size: 30px;
     color: rgb(232, 68, 34);
+}
+
+.twoButtons {
+    width: 62%;
+    margin: 0 auto;
 }
 
 .field {
@@ -291,7 +289,29 @@ header {
     text-align: center;
     border: 1px solid rgb(183, 183, 183);
     border-radius: 3px;
-    padding: 16px; 
+    padding: 12px; 
+    width: 30%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    float: left; 
+}
+
+.field:active {
+    border: 2px solid rgb(0, 140, 221); /*из-за 2px прыгает фон снизу*/
+}
+
+.worldCompanyBtn {
+    width: 62%;
+    background-color: rgb(255, 198, 0);
+    float: right;
+    padding: 13px;
+    text-align: center; 
+}
+
+.worldCompanyBtn span {
+    font-family: "Exo2";
+    font-size: 19px;
+    color: rgb(37, 37, 37);
 }
 
 /*BOTTOM*/
