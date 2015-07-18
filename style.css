@@ -231,6 +231,10 @@ header {
     padding-right: 38px;
 }
 
+.recommend .buyBtn {
+    position: relative;
+}
+
 .recommend button {
     width: 129px;
     height: 38px;
@@ -240,17 +244,18 @@ header {
     font-size: 16px;
 }
 
-.recommend button span.buyStock {
-    display: none;
-}
-
 .recommend button:hover {
+    position: absolute;
+    top: -20px;
+    transform: translateX(13px);
+    transition-property: width;
+    transition-duration: 1s;
     width: 183px;
     background-color: rgb(255, 228, 0);
 }
 
-.recommend button:hover span.buyBtn {
-    display: none;
+.recommend button:hover::after, .recommend button:active::after {
+    content: " акции";
 }
 
 .recommend button:active {
@@ -291,13 +296,14 @@ header {
     border-radius: 3px;
     padding: 12px; 
     width: 30%;
+    height: 50px;
     margin-right: 2%;
     box-sizing: border-box;
     float: left; 
 }
 
 .field:active {
-    border: 2px solid rgb(0, 140, 221); /*из-за 2px прыгает фон снизу*/
+    border: 2px solid rgb(0, 140, 221);
 }
 
 .worldCompanyBtn {
@@ -306,13 +312,35 @@ header {
     float: right;
     padding: 13px;
     text-align: center; 
-}
-
-.worldCompanyBtn span {
     font-family: "Exo2";
     font-size: 19px;
     color: rgb(37, 37, 37);
 }
+
+.worldCompanyBtn:hover, .worldCompanyBtn:active {
+    background-color: rgb(255, 228, 0);
+    transition-property: transform, width;
+    transition-duration: 1s;
+    transform: translateX(-290px);
+    width: 242px;   
+}
+
+.worldCompanyBtn:active {
+    background-color: rgb(201, 156, 0);
+}
+
+.worldCompanyBtn:hover + .field { 
+    display: none; 
+}
+
+.worldCompanyBtn:hover span {
+    display: none;
+}
+
+.worldCompanyBtn:hover::before {
+    content: "Купить акции";
+}
+
 
 /*BOTTOM*/
 
