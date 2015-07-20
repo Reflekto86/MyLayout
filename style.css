@@ -111,10 +111,49 @@ header {
     padding-bottom: 35px;
 }
 
-.infoImage {
+.infographicBrends {
+    /*padding-left: 97px;
+    padding-right: 97px;*/
+}
+
+.brendInfo {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.brendusd {
+    font-family: "Exo2Bold";
+    font-size: 16px;
+}
+
+.brendInfo:nth-child(3n+1) {
+    position: relative;
+}
+
+.brendInfo:nth-child(3n+2) {
+    position: relative;
+}
+
+.brendInfo:nth-child(3n+3) {    
+    position: relative;
+}
+
+.brendInfo:nth-child(1)::after {
+    content: url("images/top-left-line.svg");
+    position: absolute;
+    width: 153px;
+    height: 109px;
+    top: 35px;
+    left: 245px;
+}
+
+/*.infoImage {
     padding-left: 97px;
     padding-right: 97px;       
-}
+}*/
+
 
 .twoInfoButtons {
     width: 45%;
