@@ -57,3 +57,23 @@ header {
 18 июля:
 8. field - в нажатом состоянии изменяются границы: ширина (до 2пикс) и цвет. 
 Из-за изменения ширины границы с 1пикс в нормальном состоянии до 2пикс в активном, прыгает блок снизу при нажатии на кнопку field
+
+21 июля:
+9. Мне не нравится, что все палочки я позиционирую по-отдельности, получается 8 одинаковых кусков кода с разными параметрами:
+.brendInfo:nth-child(1)::after {
+    content: url("images/top-left-line.svg");
+    position: absolute;
+    width: 153px;
+    height: 109px;
+    top: 35px;
+    left: 245px;
+}
+
+.brendInfo:nth-child(2)::after {
+    content: url("images/vertical-line.svg");
+    position: absolute;
+    width: 2px;
+    height: 67px;
+    top: 55px;
+    left: 165px;
+}

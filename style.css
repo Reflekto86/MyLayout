@@ -126,6 +126,14 @@ header {
 .brendusd {
     font-family: "Exo2Bold";
     font-size: 16px;
+    position: absolute;
+    left: 50%;
+    border: 1px solid green;
+    border-radius: 2px;
+}
+
+.brendusd:nth-child(5) {
+    display: none;
 }
 
 .brendInfo:nth-child(3n+1) {
@@ -147,6 +155,69 @@ header {
     height: 109px;
     top: 35px;
     left: 245px;
+}
+
+.brendInfo:nth-child(2)::after {
+    content: url("images/vertical-line.svg");
+    position: absolute;
+    width: 2px;
+    height: 67px;
+    top: 55px;
+    left: 165px;
+}
+
+.brendInfo:nth-child(3)::before {
+    content: url("images/top-right-line.svg");
+    position: absolute;
+    width: 153px;
+    height: 109px;
+    top: 35px;
+    right: 245px;
+}
+
+.brendInfo:nth-child(4)::after {
+    content: url("images/gorizontal-line.svg");
+    position: absolute;
+    width: 131px;
+    height: 2px;
+    top: 20px;
+    left: 245px;
+}
+
+.brendInfo:nth-child(6)::before {
+    content: url("images/gorizontal-line.svg");
+    position: absolute;
+    width: 131px;
+    height: 2px;
+    top: 20px;
+    right: 245px;
+}
+
+.brendInfo:nth-child(7)::after {
+    content: url("images/bottom-left-line.svg");
+    position: absolute;
+    width: 153px;
+    height: 109px;
+    bottom: 60px;
+    left: 245px;
+}
+
+.brendInfo:nth-child(8)::before {
+    content: url("images/vertical-line.svg");
+    position: absolute;
+    width: 2px;
+    height: 67px;
+    bottom: 90px;
+    left: 165px;
+}
+
+.brendInfo:nth-child(9)::after {
+    content: url("images/bottom-right-line.svg");
+    position: absolute;
+    width: 153px;
+    height: 109px;
+    bottom: 60px;
+    right: 245px;
 }
 
 /*.infoImage {
@@ -182,28 +253,6 @@ header {
 .buyStockBtn:active {
     background-color: rgb(201, 156, 0);
 }
-
-/*.brends {
-    display: table;
-    margin: auto;
-}
-
-.brends ul {
-    display: table-row;
-}
-
-.brends li {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.brends li:nth-child(1) {
-    background-color: red;
-}
-
-.brends.brendsContent {
-   display: table-column-group;
-}*/
 
 
 /*WHY*/
