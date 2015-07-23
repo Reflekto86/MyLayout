@@ -77,3 +77,10 @@ header {
     top: 55px;
     left: 165px;
 }
+
+23 июля:
+Не работают :nth-child() для .brendusd
+Например, хочу выделить первую кнопку 534.05USD 
+.brendusd:nth-child(1) {
+    border: 3px solid red;
+} 

@@ -130,14 +130,14 @@ header {
 
 .brendusd {
     font-family: "Exo2Bold";
-    font-size: 16px;
+    font-size: 18px;
     position: absolute;
     left: 45%;
     text-align: center;
     border-radius: 2px;    
     border-color: rgb(204, 204, 204);
     background-image: linear-gradient(rgb(254, 254, 254) 0%, rgb(198, 209, 215));     
-    padding: 6px;  
+    padding: 3px;  
 }
 
 .brendInfo:nth-child(3n+1) {
@@ -227,6 +227,9 @@ header {
 }
     */
 
+.brendusd:nth-child(1) {
+    border: 3px solid red;
+} 
 
 .twoInfoButtons {
     width: 45%;
