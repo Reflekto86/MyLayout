@@ -123,11 +123,16 @@ header {
     padding-bottom: 70px;
 }
 
+.imgBrendContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .brendusd {
     font-family: "Exo2Bold";
     font-size: 16px;
     position: absolute;
-    left: 60%;
+    left: 45%;
     text-align: center;
     border-radius: 2px;    
     border-color: rgb(204, 204, 204);
@@ -135,13 +140,9 @@ header {
     padding: 6px;  
 }
 
-
-.brendusd:nth-child(5) {
-    display: none;
-}
-
 .brendInfo:nth-child(3n+1) {
     position: relative;
+    
 }
 
 .brendInfo:nth-child(3n+2) {
@@ -152,7 +153,8 @@ header {
     position: relative;
 }
 
-.brendInfo:nth-child(1)::after {
+/*
+  .brendInfo:nth-child(1)::after {
     content: url("images/top-left-line.svg");
     position: absolute;
     width: 153px;
@@ -223,11 +225,7 @@ header {
     bottom: 90px;
     right: 245px;
 }
-
-/*.infoImage {
-    padding-left: 97px;
-    padding-right: 97px;       
-}*/
+    */
 
 
 .twoInfoButtons {
