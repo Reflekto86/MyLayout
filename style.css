@@ -227,9 +227,13 @@ header {
 }
     */
 
-.brendusd:nth-child(1) {
+/*.brendusd:nth-of-type(2) {
     border: 3px solid red;
-} 
+} */
+
+.brendInfo:nth-child(4n+1) .brendusd {
+    border: 3px solid red;
+}
 
 .twoInfoButtons {
     width: 45%;
