@@ -153,7 +153,6 @@ header {
     position: relative;
 }
 
-/*
   .brendInfo:nth-child(1)::after {
     content: url("images/top-left-line.svg");
     position: absolute;
@@ -181,7 +180,7 @@ header {
     right: 245px;
 }
 
-.brendInfo:nth-child(4)::after {
+.brendInfo:nth-child(5)::after {
     content: url("images/gorizontal-line.svg");
     position: absolute;
     width: 131px;
@@ -190,7 +189,7 @@ header {
     left: 245px;
 }
 
-.brendInfo:nth-child(6)::before {
+.brendInfo:nth-child(7)::before {
     content: url("images/gorizontal-line.svg");
     position: absolute;
     width: 131px;
@@ -199,7 +198,7 @@ header {
     right: 245px;
 }
 
-.brendInfo:nth-child(7)::after {
+.brendInfo:nth-child(9)::after {
     content: url("images/bottom-left-line.svg");
     position: absolute;
     width: 153px;
@@ -208,7 +207,7 @@ header {
     left: 245px;
 }
 
-.brendInfo:nth-child(8)::before {
+.brendInfo:nth-child(10)::before {
     content: url("images/vertical-line.svg");
     position: absolute;
     width: 2px;
@@ -217,7 +216,7 @@ header {
     left: 165px;
 }
 
-.brendInfo:nth-child(9)::after {
+.brendInfo:nth-child(11)::after {
     content: url("images/bottom-right-line.svg");
     position: absolute;
     width: 153px;
@@ -225,11 +224,6 @@ header {
     bottom: 90px;
     right: 245px;
 }
-    */
-
-/*.brendusd:nth-of-type(2) {
-    border: 3px solid red;
-} */
 
 .brendInfo:nth-child(4n+1) .brendusd {
     border: 3px solid red;
